@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Registro FUA</title>
-    <!-- Redirigir al instante -->
-    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyAdbKFIDV1kEi0Hnzliwxc0MGMuUTUeCubNBcaNayYXe_WqhrQuhzL-o5811xlpOYMxA/exec" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         font-family: system-ui, sans-serif;
@@ -15,16 +14,40 @@
         margin: 0;
         background: #f7f7f7;
       }
+      .container {
+        text-align: center;
+        width: 100%;
+        max-width: 480px; /* Wider mobile width */
+      }
+      .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        height: 640px; /* Maintain mobile height */
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
       .loader {
         text-align: center;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="loader">
-      <h1>Registro FUA</h1>
-      <p>Redirigiendo…</p>
-      <a href="https://script.google.com/macros/s/AKfycbyAdbKFIDV1kEi0Hnzliwxc0MGMuUTUeCubNBcaNayYXe_WqhrQuhzL-o5811xlpOYMxA/exec">Si no se abre, haz clic aquí</a>
+    <div class="container">
+      <div class="loader">
+        <h1>Registro FUA</h1>
+        <p>Cargando formulario...</p>
+      </div>
+      <div class="iframe-wrapper">
+        <iframe src="https://script.google.com/macros/s/AKfycbyAdbKFIDV1kEi0Hnzliwxc0MGMuUTUeCubNBcaNayYXe_WqhrQuhzL-o5811xlpOYMxA/exec" title="Formulario FUA"></iframe>
+      </div>
     </div>
   </body>
 </html>
